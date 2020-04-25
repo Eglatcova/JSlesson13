@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(69, 73, 78);
+}
+button {
+  border: none;
+}
+.container {
+  margin: auto;
+  margin-top: 20px;
+  border: solid 1px #00ACEA;
+  border-radius: 10px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(233, 230, 230);
+}
+.todo-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(233, 230, 230);
+}
+.todo-list {
+  margin-bottom: 30px;
+}
+.todo-completed {
+  margin-bottom: 30px;
+}
+.todo-item {
+  list-style-type: none;
+  margin: 0;
+  border: solid 1px #00ACEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 435px;
+  height: 36px;
+  background: white;
+  padding: 0 2px 0px 7px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.todo-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(233, 230, 230);
+  width: 500px;
+  height: 50px;
+  margin: 10px 0 10px 0;
+}
+.header-input{
+  width: 392px;
+  height: 36px;
+  border: none;
+  padding-left: 7px;
+  border-radius:  10px 0px 0px 10px;
+  font-size: 17px;
+}
+.todo-buttons {
+  display: flex;
+  align-items: center;
+}
+.plus__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 36px;
+  background: white;
+  border-radius:  0px 10px 10px 0px;
+}
+.svg__plus {
+  background: transparent url('../img/plus.svg') no-repeat ; 
+  width: 35px;
+  height: 35px;
+}
+.svg__plus:hover {
+  cursor: pointer;
+  background: transparent url('../img/plus-hover.svg') no-repeat center; 
+  width: 30px;
+  height: 30px;
+}
+.svg__tick {
+  background: transparent url('../img/tick.svg') no-repeat center; 
+  width: 39px;
+  height: 39px;
+  margin-bottom: 2px;
+}
+.svg__tick:hover {
+  cursor: pointer;
+  background: transparent url('../img/tick-hover.svg') no-repeat center;
+  width: 30px; 
+  height: 30px;
+  margin-bottom: 0px;
+}
+.svg__ticked {
+  background: transparent url('../img/tick-hover.svg') no-repeat center; 
+  width: 30px;
+  height: 30px;
+}
+.svg__trash {
+  background: transparent url('../img/trash.svg') no-repeat center; 
+  width: 27px;
+  height: 27px;
+}
+.svg__trash:hover {
+  cursor: pointer;
+  background: transparent url('../img/trash-hover.svg') no-repeat center; 
+}
+.todo-complete {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+}
+.todo-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

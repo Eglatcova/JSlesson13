@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <form class="todo-control">
+        <label>
+          <input type="text" class="header-input" placeholder="Дело">
+        </label>
+        <div class="plus__container">
+          <button class="svg svg__plus"></button>
+        </div>
+      </form>
+    </header>
+    <div class="todo-container">
+      <ul class="todo todo-list" id="todo">
+      </ul>
+      <ul class="todo todo-completed" id="completed">
+        <!--
+        <li class="todo-item">
+          <span class="text-todo">Помыть посуду</span>
+          <div class="todo-buttons">
+            <div class="todo-remove">
+              <button class="svg svg__trash"></button>
+            </div>
+            <div class="todo-complete">
+              <button class="svg svg__ticked"></button>
+            </div>
+          </div>
+        </li>-->
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
