@@ -4,7 +4,9 @@ const todoControl = document.querySelector('.todo-control'),
   headerInput = document.querySelector('.header-input'),
   todoList = document.querySelector('.todo-list'),
   todoCompleted = document.querySelector('.todo-completed');
-let todoData = [{
+
+
+  let todoData = [{
     value: '',
     completed: false
   }
@@ -59,10 +61,13 @@ const render = function () {
       todoData.splice(todoData.indexOf(item), 1);
       li.remove();
       dataUpdate();
+      console.log(localStorage.getItem('localData'));
     });
 
     dataUpdate();
   });
+  console.log(localStorage.getItem('localData'));
+  console.log(todoData);
 };
 
 todoControl.addEventListener('submit', function (event) {
